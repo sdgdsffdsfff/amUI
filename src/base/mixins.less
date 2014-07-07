@@ -1,0 +1,55 @@
+/*mixins中提供LESS方法*/
+.background(@start:#fff, @end:#000) {
+    background:@end;
+    background-image:-webkit-gradient(linear, left top, left bottom, from(@start), to(@end)); /* Saf4+, Chrome */
+    background-image:linear-gradient(@start, @end);
+}
+.box-sizing(@sizing:border-box){
+    -webkit-box-sizing:@sizing;
+}
+.box-shadow(@value) {
+    -webkit-box-shadow:@value;
+}
+.box-shadow(@value1, @value2) {
+    -webkit-box-shadow:@value1, @value2;
+}
+
+.border-radius(@radius:0) {
+    border-top-left-radius:@radius;
+    border-top-right-radius:@radius;
+    border-bottom-left-radius:@radius;
+    border-bottom-right-radius:@radius;
+    -webkit-background-clip:padding-box;
+}
+
+.display-box() {
+    display:-webkit-box;
+}
+
+.box-orient(@direction) {
+    -webkit-box-orient:@direction;
+}
+
+.box-flex(@scale) {
+    -webkit-box-flex:@scale;
+}
+.transform(@value) {
+    -webkit-transform:@value;
+}
+
+.transition(@value) {
+    -webkit-transition: @value;
+}
+.float-clear(){
+    &:after{
+        visibility:hidden;
+        display:block;
+        font-size:0;
+        content:" ";
+        clear:both;
+        height:0;
+    }
+}
+.backgroundSize(@width,@height){
+    -webkit-background-size:@width @height;
+}

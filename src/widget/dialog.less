@@ -1,0 +1,79 @@
+@import "../base/mixins";
+.am-dialog{
+    margin:100px auto;
+    width:280px;
+    border:1px solid #525151;
+    .border-radius(4px);
+    background-color:#e8e8e8;
+    .box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .5));
+}
+.am-dialog .am-dialog-header{
+    .box-sizing();
+    padding:8px 9px 0;
+}
+.am-dialog .am-dialog-header h3{
+    font-size:18px;
+    text-align:center;
+    color:#000;
+    text-shadow:0px 1px 0px rgba(255, 255, 255, .6);
+}
+.am-dialog .am-dialog-header h3:after{
+    display:block;
+    content:'';
+    margin-top:8px;
+    height:1px;
+    overflow:hidden;
+    background-image:-webkit-radial-gradient(rgba(255, 255, 255, .4),rgba(255,255,255,0) 60%);
+    background-image:radial-gradient(rgba(255, 255, 255, .4),rgba(255,255,255,0) 60%);
+}
+.am-dialog .am-dialog-header:after{
+    display:block;
+    content:'';
+    height:1px;
+    overflow:hidden;
+    background-image:-webkit-radial-gradient(rgba(172,172,172,1),rgba(172,172,172,0) 60%);
+    background-image:radial-gradient(rgba(172,172,172,1),rgba(172,172,172,0) 60%);
+}
+.am-dialog .am-dialog-body{
+    .box-sizing();
+    padding:0 8px 14px;
+}
+.am-dialog .am-dialog-footer .am-flexbox-item{
+    width:50%;
+}
+.am-dialog .am-dialog-body .am-dialog-brief{
+    display:block;
+    margin-top:12px;
+    margin-bottom:-1px;
+    font-size:18px;
+    line-height:21px;
+    text-align:center;
+    color:#000;
+    text-shadow:0px 1px 0px rgba(255, 255, 255, .6);
+}
+.am-dialog .am-password-handy{
+    margin-top:13px;
+}
+.am-dialog .am-dialog-footer{
+    border-top:1px solid #b2b2b2;
+    padding:14px 9px 13px;
+    .box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .25));
+}
+.am-dialog .am-dialog-body input:focus{
+    border-color:#fa0;
+}
+.am-dialog .am-dialog-body input.am-password-former{
+    .box-sizing();
+    display:block;
+    width:100%;
+    height:44px;
+    overflow:hidden;
+    border:1px solid #b9b9b9;
+    .border-radius(4px);
+    font-family:Courier,monospace;
+    margin-top:13px;
+    padding:13px 5px 11px;
+    .box-shadow(0px 1px 0px rgba(255, 255, 255, .4));
+    font-size:18px;
+    line-height:20px;
+}

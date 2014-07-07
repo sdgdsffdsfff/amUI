@@ -1,0 +1,138 @@
+.am-button {
+    display:inline-block;
+    width:100%;
+    padding:0 4px;
+    .box-sizing();
+    height:42px;
+    text-align:center;
+    font-size:20px;
+    line-height:42px;
+    .border-radius(4px);
+}
+/* 小按钮 */
+.am-button-sm {
+    height:36px;
+    font-size:13px;
+    line-height:36px;
+    .border-radius(3px);
+}
+/* 中等按钮 */
+.am-button-md {
+    height:40px;
+    font-size:16px;
+    line-height:40px;
+    .border-radius(3px);
+}
+.am-button-inline{
+    width:auto;
+    padding-left:16px;
+    padding-right:16px;
+    .box-sizing(content-box);
+    background-clip:content-box;
+}
+/* 蓝色按钮 */
+.am-button,
+.am-button-blue {
+    border:1px solid #2d68f0;
+    color:#fff;
+    .background(#2c66f0, #3d80f3);
+    &:active,
+    &.hover{
+        color:#fff;
+        border-color:#2d68f0;
+        background:#184ec8;
+    }
+    &.am-button-light{
+        color:#3d80f3;
+        border-color:#3d80f3;
+        background:#fff;
+        &:active,
+        &.hover{
+            border:1px solid #2d68f0;
+            color:#fff;
+            .background(#2c66f0, #3d80f3);
+        }
+    }
+}
+/* 红色按钮 */
+.am-button-red {
+    border-color:#b30908;
+    .background(#cc2e1e, #e03f37);
+    &:active,
+    &.hover{
+        border-color:#b30908;
+        background:#b30908;
+    }
+    &.am-button-light{
+        color:#b30908;
+        border-color:#b30908;
+        background:#fff;
+        &:active,
+        &.hover{
+            color:#fff;
+            border-color:#b30908;
+            .background(#cc2e1e, #e03f37);
+        }
+    }
+}
+/* 黑色按钮 */
+.am-button-black {
+    border-color:#717378;
+    background:#717378;
+    color:#ccc;
+    &:active,
+    &.hover{
+        border-color:#54585f;
+        color:#999;
+        background:#54585f;
+    }
+
+    &.am-button-light{
+        color:#8f8f95;
+        border-color:#8f8f95;
+        background:#fff;
+        &:active,
+        &.hover{
+            border-color:#717378;
+            background:#717378;
+            color:#ccc;
+        }
+    }
+}
+/* 白色按钮 */
+.am-button:disabled,
+.am-button-white {
+    border-color:#cbcbcb;
+}
+.am-button-white{
+    color:#000;
+    .background(#f4f4f4, #fffefe);
+    &:active,
+    &.hover{
+        color:#000;
+        border-color:#cbcbcb;
+        background:#e5e5e5;
+    }
+    &.am-button-light{
+        color:#8f8f95;
+        border-color:#8f8f95;
+        background:#fff;
+        &:active,
+        &.hover{
+            border-color:#717378;
+            background:#717378;
+            color:#ccc;
+        }
+    }
+}
+.am-button:disabled{
+    color:#ccc;
+    text-shadow:none;
+    .background(#ededed, #f3f3f3);
+    &:active,
+    &.hover{
+        border-color:#cbcbcb;
+        color:#ccc;
+        .background(#ededed, #f3f3f3);
+    }
+}

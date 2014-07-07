@@ -1,0 +1,96 @@
+/* 默认顶部导航 */
+.am-header {
+    position:relative;
+    padding:3px 0;
+    .box-sizing();
+    .box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .08));
+    .background(#303345,#252833);
+}
+.am-header h1 {
+    margin:6px auto 5px;
+    line-height:1.75em;
+    text-align:center;
+    height:30px;
+    font-size: 1.125em;
+    font-weight: 900;
+    font-family: sans-serif;
+    color:#fff;
+}
+.am-header h1 .iconfont {
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.am-header h1 a,
+.am-header h1 a:visited {
+    color:#fff;
+}
+.am-header .am-header-reverse,
+.am-header .am-header-operate {
+    position:absolute;
+    top:6px;
+    text-align:center;
+    color:#fff;
+}
+.am-header .am-header-reverse {
+    left:5px;
+    padding-left:6px;
+}
+.am-header .am-header-operate{
+    right:5px;
+    padding-right:6px;
+}
+
+.am-header .am-header-reverse-icon,
+.am-header .am-header-operate-icon {
+    width:36px;
+    height:36px;
+    line-height:35px;
+    -webkit-mask-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(0, 0, 0)), to(rgba(0, 0, 0, 0.2)));
+    -webkit-mask-origin: content;
+    font-size: 24px;
+    text-shadow:  0 0px 3px #000;
+}
+.am-header .am-header-reverse-btn,
+.am-header .am-header-operate-btn {
+    top: 8px;
+    display: inline-block;
+    width: auto;
+    padding: 4px 10px;
+    font-size: 14px;
+    line-height: 20px;
+    border: 1px #000  solid;
+    color:#D3D3D2;
+    .background(#3D4257,#292B38);
+    .border-radius(6px);
+    .box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .15), 0 1px 0px rgba(255, 255, 255, .15));
+}
+/* 灰色导航 */
+.am-header-grey {
+    .background(#F2F2F2,#E6E6E6);
+    .box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .08), 0 1px 8px rgba(0, 0, 0, .2));
+    border-bottom: 1px #c1c1c5  solid;
+}
+.am-header-grey h1 {
+    color:#333;
+}
+.am-header-grey h1 a,
+.am-header-grey h1 a:visited {
+    color:#333;
+}
+.am-header-grey .am-header-reverse,
+.am-header-grey .am-header-operate {
+    color:#888;
+}
+.am-header-grey .am-header-reverse-icon,
+.am-header-grey .am-header-operate-icon {
+    color:#888;
+    text-shadow:  0 0px 3px #fff;
+    -webkit-mask-image: -webkit-gradient(linear,0% 0%, 0% 100%, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 1)));
+}
+.am-header-grey .am-header-reverse-btn,
+.am-header-grey .am-header-operate-btn {
+    .background(#F2F2F2,#E6E6E6);
+    border: 1px #c1c1c5  solid;
+    .box-shadow(inset 0px 1px 0px rgba(255, 255, 255, .8), 0 1px 0px rgba(255, 255, 255, .8));
+}

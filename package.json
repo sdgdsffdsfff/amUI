@@ -1,0 +1,38 @@
+{
+  "family": "amui",
+  "name": "dpl",
+  "version": "1.2.0",
+  "description": "支付宝无线端通用样式库",
+  "homepage": "",
+  "author": "wljray",
+  "maintainers": [
+    "wljray"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://gitlab.alibaba-inc.com/leijun.wulj/wljray.git"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "keywords": [],
+  "licenses": "MIT",
+  "spm": {
+    "output": [
+        "amui.css",
+        "amui-doc.css",
+        "view/agreement.css",
+        "view/article.css",
+        "view/city-select.css",
+        "view/timeline.css",
+        "view/page-result.css",
+        "widget/simple-password.css",
+        "widget/dialog.css",
+        "widget/toast.css",
+        "util/iconfont.css"
+    ],
+    "alias": {},
+    "devAlias": {},
+    "engines": {}
+  }
+}
