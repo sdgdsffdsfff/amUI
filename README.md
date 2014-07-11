@@ -25,3 +25,6 @@ AMUI是一套无线前端的样式解决方案，主要是为了迅速搭建网�
 * 兼容范围：
 	* 优先保证 iOS 5+，Android2.3 + 体验（钱包、淘宝主客等主要系统分布）
 	* iOS4、Android2.2(2.1)、其它wap浏览器（UC等）确保关键体验
+
+### 使用方式
+[点击此链接](http://am-team.github.io/amui/amui-doc.html)
